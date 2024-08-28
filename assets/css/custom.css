@@ -5,6 +5,8 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Arial', sans-serif; /* O la fuente que prefieras */
+	color: white;
+	background-color: #313131;
 }
 
 /* Barra de navegación fija en la parte superior */
@@ -20,8 +22,8 @@ body {
 .content {
     margin-top: 56px; /* Altura de la barra de navegación */
     margin-bottom: 60px; /* Altura del footer */
-    padding: 20px;
-    background-color: #f8f9fa; /* Color de fondo del contenido */
+    padding: 50px;
+    background-color: #313131; /* Color de fondo del contenido */
     overflow: auto; /* Permite el desplazamiento del contenido */
 	padding-bottom: 50%
 }
