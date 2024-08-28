@@ -9,29 +9,28 @@ body {
 
 /* Barra de navegación fija en la parte superior */
 .navbar {
-    position: fixed;
-    top: 0;
+    position: relative;
     width: 100%;
-    z-index: 1000; /* Asegura que la barra de navegación esté por encima del contenido */
+    background-color: #343a40; /* Color de fondo */
+    z-index: 1000; /* Asegura que la barra de navegación esté sobre el contenido */
 }
 
 /* Contenido principal que debe desplazarse */
 .content {
-    flex: 1;
     padding-top: 56px; /* Altura de la barra de navegación */
     padding-bottom: 60px; /* Altura del footer */
+    background-color: #f8f9fa; /* Color de fondo del contenido */
 }
 
 /* Footer fijo en la parte inferior */
 footer {
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
     background-color: #343a40;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    z-index: 1000; /* Asegura que el footer esté por debajo del contenido, pero encima del fondo */
+    margin-top: auto; /* Empuja el footer hacia abajo */
 }
 
 /* Estilo adicional para los enlaces en el footer */
