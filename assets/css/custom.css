@@ -1,26 +1,51 @@
+/* Estilo para el cuerpo de la página */
 body {
-    background-color: #2c2c2c;
-    color: #f0f0f0;
-    font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* O la fuente que prefieras */
 }
 
-h1, h2, h3 {
+/* Barra de navegación fija en la parte superior */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que la barra de navegación esté por encima del contenido */
+}
+
+/* Contenido principal que debe desplazarse */
+.content {
+    flex: 1;
+    padding-top: 56px; /* Altura de la barra de navegación */
+    padding-bottom: 60px; /* Altura del footer */
+}
+
+/* Footer fijo en la parte inferior */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
     color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000; /* Asegura que el footer esté por debajo del contenido, pero encima del fondo */
 }
 
-.container {
-    background-color: #3a3a3a;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-footer p, footer a {
-    color: #888888;
-    font-size: 0.9em;
+/* Estilo adicional para los enlaces en el footer */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 footer a:hover {
-    color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
+}
+
+/* Ajustes adicionales para la visualización */
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
