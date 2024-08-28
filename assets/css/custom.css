@@ -16,6 +16,50 @@ body {
     z-index: 1000; /* Asegura que la barra de navegación esté sobre el contenido */
 }
 
+/* Contenido principal que debe desplazarse */
+.content {
+    margin-top: 56px; /* Altura de la barra de navegación */
+    margin-bottom: 60px; /* Altura del footer */
+    padding: 20px;
+    background-color: #f8f9fa; /* Color de fondo del contenido */
+    overflow: auto; /* Permite el desplazamiento del contenido */
+	padding-bottom: 50%
+}
+
+/* Ajustes para pantallas de celular */
+@media (max-width: 768px) {
+    .content {
+        padding-bottom: 50%;
+    }
+}
+
+/* Eliminar padding-bottom en pantallas grandes */
+@media (min-width: 769px) {
+    .content {
+        padding-bottom: 10%;
+    }
+}
+
+/* Estilos del botón de desplazamiento hacia arriba */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001; /* Para que esté sobre otros elementos */
+    display: none; /* Oculto por defecto */
+}
+
+.scroll-to-top:hover {
+    background-color: #495057; /* Cambia el color al pasar el mouse */
+}
+
 /* Footer fijo en la parte inferior */
 footer {
     position: fixed;
@@ -28,15 +72,6 @@ footer {
     z-index: 1000; /* Asegura que el footer esté sobre el fondo */
 }
 
-/* Contenido principal que debe desplazarse */
-.content {
-    margin-top: 56px; /* Altura de la barra de navegación */
-    margin-bottom: 60px; /* Altura del footer */
-    padding: 20px;
-    background-color: #f8f9fa; /* Color de fondo del contenido */
-    overflow: auto; /* Permite el desplazamiento del contenido */
-}
-
 /* Estilo adicional para los enlaces en el footer */
 footer a {
     color: #ffffff;
@@ -45,10 +80,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-/* Ajustes adicionales para la visualización */
-.container {
-    max-width: 1200px;
-    margin: auto;
 }
