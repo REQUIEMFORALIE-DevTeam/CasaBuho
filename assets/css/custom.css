@@ -11,21 +11,25 @@ body {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background-color: #343a40; /* Color de fondo */
     z-index: 1000; /* Asegura que la barra de navegación esté sobre el contenido */
+    height: 56px; /* Altura de la barra de navegación */
 }
 
 /* Footer fijo en la parte inferior */
 footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     background-color: #343a40;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
     z-index: 1000; /* Asegura que el footer esté sobre el fondo */
+    height: 60px; /* Altura del footer */
 }
 
 /* Contenido principal que debe desplazarse */
@@ -35,6 +39,7 @@ footer {
     padding: 20px;
     background-color: #f8f9fa; /* Color de fondo del contenido */
     overflow: auto; /* Permite el desplazamiento del contenido */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del elemento */
 }
 
 /* Estilo adicional para los enlaces en el footer */
