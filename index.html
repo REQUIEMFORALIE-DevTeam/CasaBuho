@@ -6,13 +6,22 @@
     <title>Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <style>
+        .navbar-divider {
+            height: 40px; /* Altura igual al logo */
+            width: 2px;
+            background-color: #fff;
+            margin: 0 15px; /* Espacio alrededor de la línea */
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="assets/images/logo.png" alt="Logo" width="40" height="40">
-                La Casa Búho
+                <div class="navbar-divider"></div> <!-- Línea vertical -->
+                <span>La Casa Búho</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,15 +47,13 @@
 
     <div class="content">
         <div class="container">
-		
             <h1>Bienvenido a La Casa Búho</h1>
             <p>En La Casa Búho, buscamos conectar personas con intereses diversos en un entorno enriquecedor y seguro. Explora nuestras páginas para conocer más sobre nuestra política de privacidad, términos y condiciones, y cómo ponerte en contacto con nosotros.</p>
             <!-- Puedes agregar más contenido aquí -->
-			
         </div>
     </div>
-	
-	<button class="scroll-to-top" id="scrollToTopBtn">
+
+    <button class="scroll-to-top" id="scrollToTopBtn">
         ↑
     </button>
 
@@ -65,7 +72,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Script para el botón de desplazamiento -->
+    <!-- Script para el botón de desplazamiento -->
     <script>
         // Mostrar el botón cuando el usuario se desplaza hacia abajo
         window.onscroll = function() {
